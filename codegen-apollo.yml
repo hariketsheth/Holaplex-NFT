@@ -1,0 +1,12 @@
+schema: ${NEXT_PUBLIC_INDEXER_GRAPHQL_URL}
+documents: './src/graphql/**/*.graphql'
+generates:
+  ./src/graphql/indexerTypes.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+config:
+  withHOC: false
+  withComponent: false
+  withHooks: true

@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["typings"],
+    "target": "es2015",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/common/*": ["src/common/*"],
+      "@/styles/*": ["src/common/styles/*"],
+      "@/assets/*": ["src/common/assets/*"],
+      "@/components/*": ["src/common/components/*"],
+      "@/constants/*": ["src/common/constants/*"],
+      "@/hooks/*": ["src/common/hooks/*"],
+      "@/layouts/*": ["src/layouts/*"],
+      "@/modules/*": ["src/modules/*"],
+      "@/types/*": ["src/types/*"]
+    },
+    "incremental": true
+  },
+  "types": ["google.analytics", "mocha", "chai"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/admin/index.tsx"],
+  "exclude": ["node_modules"]
+}
